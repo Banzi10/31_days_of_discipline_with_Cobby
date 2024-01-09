@@ -1,0 +1,6 @@
+Memory Management/Allocation in C is a process  by which computer programs are assigned to physical or virtual memory space. The computer memory is a finite resource and as such, has to be efficiently managed. Created files are stored on the hard disk, but when we want to run the programs, it is moved to the RAM so processr can have access to it and run it.
+The computer memory is divided into four segments - Text Segment, Data Segment, Stack and Heap Segment
+Text Segment contains the following: Compiled code and Machine code
+Data Segment contains the following: Static variabes and global variables
+Stack Segment: Functions and Local variables. It is fixed and static. The computer allocates this memory itself
+Heap Segment: This is th rest of the memory available to us to allocate dynamically. This is not fixed as we can create and remove items on this memory as we like
