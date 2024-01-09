@@ -1,0 +1,20 @@
+ARRAY
+For my next topic, I'll be discussing Arrays in C
+An array is a data structure of data of same data type stored in sequential form
+
+DEFINTION AND DECLARATION
+Arrays are defined in the following format:
+Data_type  Array_name[Size of Array]
+
+LENGTH OF ARRAY
+It is important to note that the length or size of an array can only a positive integer. It can't be a negative integer.
+
+ACCESSING ARRAYS
+We can access or navigate our arrays using the indexing method.
+Example:
+We have an array in the form below:
+
+Int arr[5];
+Accessing this array with the indexing method means we'll start from 0-4
+arr[0] = First element in the array
+arr[4] = Last element in the array
