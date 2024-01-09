@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+  int size;   /* The size variable shows the number of integers we need spaces for */
+  size = 3;
+  
+  int *p = (int*)malloc(size * sizeof(int)); /* In this line, we are allocating the memory for the integers. The (int*) is used to typecast the malloc function */
+  p[0] = 4;  /* In this line, we are assigning the value of 4 to the first element of                 the array */
+  p[1] = 3;
+  p[2] = 2;
+  printf("The values in the alloted spaces are %d, %d, %d", p[0], p[1], p[2]);
+  free(p);  /* We free the space on the heap when we are done with it */
+  return 0;
+}
