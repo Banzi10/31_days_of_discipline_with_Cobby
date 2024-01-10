@@ -14,3 +14,6 @@ int main(int argc, char *argv[]) {
   free(p);  /* We free the space on the heap when we are done with it */
   return 0;
 }
+
+BELOW IS THE EXCEUTABLE CODE IN REPLIT
+https://replit.com/@SegunOgundele/Memory-Management-in-C#main.c
