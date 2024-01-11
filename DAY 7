@@ -1,0 +1,8 @@
+USING THE SIZEOF OPERATOR TO GET THE NUMBER OR SIZE OF AN ARRAY
+We can use the sizeof operator to get the size of an array using a simple formula that would be highlighted below
+sizeof(name_of_arr)/sizeof(name_of_arr[0]) = number of array elements
+Firstly, the sizeof(name_of_arr) part would give you the total size of the elements in bytes. This is automatically calculated by the compiler. for instance, if we have 10 integers, using the sizeof(name_of_array) function would return 40bytes which is basically 4bytes per integer x 10 elements.
+Secondly, the sizeof(name_of_arr[0]) gives you the size of the first elements in bytes. Then if you divide both, we get the number of elements in the array.
+I will be posting a replit link below that explains this with codes.
+
+https://replit.com/@SegunOgundele/SparklingUnpleasantLoopfission#main.c
