@@ -1,0 +1,25 @@
+I worked on another example to get myself more familiar with array concepts. The replit code to the array is below
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int check[10] = {0};
+  Printf("Enter your value: ");
+  int value;  
+  Scanf("%d", &value);
+
+  while (value > 0) {
+    int rem = value%10;
+      if (check[rem] == 1){
+        break;
+        value = value/10;
+      }
+  }
+if (value > 0){
+  printf("Repeated digit");
+}
+  else{
+    printf("No repeated digit");
+  }
+}
