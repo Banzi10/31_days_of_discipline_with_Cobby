@@ -1,0 +1,26 @@
+1D ARRAYS INITIALIZATION
+There are basically four methods to Arrays Initialization and I'll be discussing on all of them as today's topic
+1.   Int arr[5] = {1, 2, 3, 4, 5};
+In this first method, we can see the array size is include in its initialization. We specify the size then go on to list the exact amount of listed elements into the array
+
+2.   int arr[] = {1, 2, 3, 4, 5};
+In this method, we don't specify the array size. This is also allowed. We can add as much elements as we like as the compiler would automatically calculate the size for us.
+
+3.  int arr[5];
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+    arr[3] = 4;
+    arr[4] = 5;
+This method is quite cumbersome as we specify the lenght and then use each indexes to fill up each array space one after the another. As you'd have figured out, this would be a lot of work if the elements are bulky so it is not advisable to use this method
+
+4.  int arr[5];
+    for (i=0; i,5; i++);
+    scanf("%d", &arr[i]);
+In this method, we can use the loop function and scanf function to get entries of the array from the user. The scanf function gets the entry and it is stored in the address of the array index
+
+TIPS FOR ARRAY INITIALIZATION
+1. You have to add at least one element after declaration. If you dont do this, it will return error
+    int arr[5] = {};
+2. You can't add more elements than the array size you specify. In a situation where we don't know the exact size we need and want to keep adding elements later, it's best to keep the size empty
+3. If you don't add as much element as the size you declare, the remaining spaces are filled with 0
