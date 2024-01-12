@@ -1,0 +1,32 @@
+MULTIDIMENSIONAL ARRAYS
+Today's topics on our exploration and mastery of arrays brings us to the concept of Multidimensional arrays.
+Multidimensional array is simply defined as an array of arrays.
+We have 2-dimensional arrays, 3-dimensional arrays, and so on...
+
+2-D ARRAYS
+Unlike the 1-D array which is the normal array of elements we've been discussing with one column, the 2-D array has both a row and a column. Visualize a matrix of any form as an example of this.
+int arr[5][10]
+Multiplying row by column would give us the total elements in the array
+
+How to initialize a 2-D Array
+There are two methods to initalizing a 2-D method but the more accepted method is highlighted below
+Remember the array syntax;
+int a[2][3] = {{1, 2, 3}, {4, 5, 6}}
+These array entries are entered into the array contiguously with one row filled before the next
+
+Accessing elements in a 2-D Array
+We use the row and column index to access elements in a 2-D array
+To access the third element in the first row, we use array-name[0][2]
+
+Printing elements in 2-D Array
+We use a two 'for loops' to print elements in a 2-D Array. This is described below
+
+int a[2][3] = {{1, 2, 3}, {4, 5, 6}}
+
+int i, j;
+for (i=0; i<2; i++) {
+  for (j=0; j<3; j++) {
+    printf("%d ", a[i][j])
+  }
+}
+i represents the row loop and j represents the column loops. We use nested loop so why i is index 0, we print the elements of the column j
