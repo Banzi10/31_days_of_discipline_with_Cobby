@@ -1,0 +1,37 @@
+3-D Arrays
+Today i researched about 3D Arrays and learnt about their visualization, how to access them, how to initialize them and how to print them
+
+Visualization
+We studied 2-D arrays yesterday. So basically to visualize a 3-D Array, visualize two  2-D Arrays. This is basically what a 3-D Array is.
+For example, if we have an initialized 3-D Array as:   int a[2][3][3];     This basically means two 3x3 arrays; So see it as, the first array size ([2]) is the number of arrays; the remaining two sizes are the rows and columns of the arrays
+
+Accessing the arrays
+We also use array indexing to access the arrays
+For example, in the first example of the 3-D array we gave above, lets try to access the element in the 1st row and 3rd column of the first array. We know the first array size is the number of arrays so a[0] would give us the first array
+the remaining two sizes are the rows and column so the first row would be a[0] and 3rd column would be a[2]. Combining this would give us a[0][0][2] - 1st array, 1st row and 3rd column
+
+Initialization of 3-D Array
+There are two methods of initialization but an acceptable method is shown below
+int a[2][3][3] = {
+                  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}}
+                  }
+These entires are entered into the arrays contiguously. This means accordingly from the first array then the second array till the end
+
+Printing a 3-D Array
+As our 2-D Array, we used two loops but like you probably guessed, for the 3-D Array, we'll use 3 loops. This is shown below:
+
+int a[2][2][3] = {
+                  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}}
+                  };
+int i; // This represents the number of arrays
+int j; // This represents the rows 
+int k; // This represents the columns
+
+for (i=0; i<2; i++) {
+  for (j=0; j<2; j++) {
+    for (k=0; k<3; k++) {
+      printf("%d ", a[i][j][k]);
+      }
+    }
+  }
+
