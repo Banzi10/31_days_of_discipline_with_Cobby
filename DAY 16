@@ -1,0 +1,26 @@
+It shouldn't surprise youi that i'm on Day 16 from Day 12. This third week, I've been collaborating on tasks with my partner and these tasks can be found on his github
+
+Today, we investigated the concept of memory fragmentation and proposed some strategies to help us lessen its impact on program performance. Our findings are highlighted below...
+
+MEMORY FRAGMENTATION AND HOW TO MITIGATE ITS IMPACT
+Memory fragmentation in C occurs when memory is allocated and deallocated in a way that leaves small, non-contiguous free memory blocks. This can lead to inefficient memory usage and performance issues. Here are some strategies to mitigate its impact:
+
+1. **Use Memory Pools:**
+   Allocate fixed-size memory blocks and manage them in pools. This helps reduce fragmentation by ensuring that allocations and deallocations are consistent in size.
+
+2. **Memory Compaction:**
+   Periodically rearrange allocated memory to consolidate free blocks and reduce fragmentation. This involves moving allocated blocks to create a larger contiguous free space.
+
+3. **Buddy Memory Allocation:**
+   Divide memory into blocks of sizes that are powers of two. Allocate memory in blocks and use a buddy system to merge adjacent free blocks. This helps to minimize fragmentation.
+
+4. **Dynamic Memory Allocators:**
+   Consider using custom memory allocators or more advanced allocators like Doug Lea's malloc or ptmalloc, which are designed to handle fragmentation more efficiently than the default malloc.
+
+5. **Caching and Recycling:**
+   Implement a caching mechanism for frequently allocated and deallocated objects. Reuse memory blocks when possible instead of always allocating new ones.
+
+6. **Memory Fragmentation Analysis:**
+   Regularly analyze memory fragmentation using tools like Valgrind or other memory profilers. This helps identify patterns and areas where fragmentation is more likely to occur.
+
+There are more but these are the ones we will be considering for now..
